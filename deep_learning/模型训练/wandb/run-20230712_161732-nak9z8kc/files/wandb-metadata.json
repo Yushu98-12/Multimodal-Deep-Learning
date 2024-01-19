@@ -1,0 +1,50 @@
+{
+    "os": "Windows-10-10.0.22000-SP0",
+    "python": "3.7.16",
+    "heartbeatAt": "2023-07-12T08:17:39.160427",
+    "startedAt": "2023-07-12T08:17:32.962386",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "G:\\Projects\\drought_wheat\\\u6df1\u5ea6\u5b66\u4e60\\\u6a21\u578b\u8bad\u7ec3\\run.py",
+    "codePath": "\u6df1\u5ea6\u5b66\u4e60\\\u6a21\u578b\u8bad\u7ec3\\run.py",
+    "git": {
+        "remote": "http://8.137.38.124:7002/wuyushu/drought_wheat.git",
+        "commit": "a07bcddb8bed6f8ba251e21f112b83eb5074923b"
+    },
+    "email": "584363684@qq.com",
+    "root": "G:/Projects/drought_wheat",
+    "host": "WuYushu",
+    "username": "58436",
+    "executable": "F:\\Anaconda3\\envs\\PyTorch\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2555.0,
+        "min": 0.0,
+        "max": 3201.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2555.0,
+            "min": 0.0,
+            "max": 3201.0
+        }
+    ],
+    "disk": {
+        "total": 199.99999618530273,
+        "used": 48.153953552246094
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.855525970458984
+    }
+}

@@ -1,0 +1,40 @@
+
+  0%|          | 0/188 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 188/188 [01:10<00:00,  2.65it/s]
+Traceback (most recent call last):
+  File "G:\Projects\小麦干旱程度检测\基于深度学习的小麦干旱程度检测\模型训练\run.py", line 331, in <module>
+    if log_test['Test_accuracy'] > best_test_accuracy:
+KeyError: 'Test_accuracy'

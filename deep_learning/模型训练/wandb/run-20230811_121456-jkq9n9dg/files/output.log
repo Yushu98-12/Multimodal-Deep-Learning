@@ -1,0 +1,141 @@
+
+Epoch 1/30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 150/150 [00:59<00:00,  2.51it/s]
+保存新的最佳模型 ../checkpoints/AlexNet-best_1-0.000.pth
+Epoch 2/30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 150/150 [00:58<00:00,  2.56it/s]
+保存新的最佳模型 ../checkpoints/AlexNet-best_1-0.858.pth
+Epoch 3/30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 150/150 [00:58<00:00,  2.58it/s]
+保存新的最佳模型 ../checkpoints/AlexNet-best_1-0.938.pth
+Epoch 4/30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 150/150 [00:56<00:00,  2.64it/s]
+Traceback (most recent call last):
+  File "G:\Projects\drought_wheat\deep_learning\模型训练\run.py", line 338, in <module>
+    log_test = evaluate_testset()
+  File "G:\Projects\drought_wheat\deep_learning\模型训练\run.py", line 259, in evaluate_testset
+    for images, labels in test_loader:  # 生成一个 batch 的数据和标注
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\torch\utils\data\dataloader.py", line 435, in __next__
+    data = self._next_data()
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\torch\utils\data\dataloader.py", line 1068, in _next_data
+    idx, data = self._get_data()
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\torch\utils\data\dataloader.py", line 1034, in _get_data
+    success, data = self._try_get_data()
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\torch\utils\data\dataloader.py", line 872, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "F:\Anaconda3\envs\PyTorch\lib\multiprocessing\queues.py", line 104, in get
+    if not self._poll(timeout):
+  File "F:\Anaconda3\envs\PyTorch\lib\multiprocessing\connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "F:\Anaconda3\envs\PyTorch\lib\multiprocessing\connection.py", line 330, in _poll
+    return bool(wait([self], timeout))
+  File "F:\Anaconda3\envs\PyTorch\lib\multiprocessing\connection.py", line 869, in wait
+    ready_handles = _exhaustive_wait(waithandle_to_obj.keys(), timeout)
+  File "F:\Anaconda3\envs\PyTorch\lib\multiprocessing\connection.py", line 801, in _exhaustive_wait
+    res = _winapi.WaitForMultipleObjects(L, False, timeout)
+KeyboardInterrupt

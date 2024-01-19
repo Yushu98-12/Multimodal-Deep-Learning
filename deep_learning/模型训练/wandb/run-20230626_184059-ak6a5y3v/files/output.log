@@ -1,0 +1,38 @@
+
+  0%|          | 0/188 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 188/188 [01:09<00:00,  2.72it/s]
+Traceback (most recent call last):
+  File "G:\Projects\小麦干旱程度检测\基于深度学习的小麦干旱程度检测\模型训练\run.py", line 337, in <module>
+    new_best_checkpoint_path = 'checkpoints/ResNet50-best_1-{:.3f}.pth'.format(log_test['Test_accuracy'])
+KeyError: 'Test_accuracy'

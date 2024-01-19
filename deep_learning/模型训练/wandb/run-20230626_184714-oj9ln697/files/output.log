@@ -1,0 +1,48 @@
+
+Epoch 1/30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 188/188 [01:14<00:00,  2.53it/s]
+Traceback (most recent call last):
+  File "G:\Projects\小麦干旱程度检测\基于深度学习的小麦干旱程度检测\模型训练\run.py", line 338, in <module>
+    torch.save(model, new_best_checkpoint_path)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\torch\serialization.py", line 369, in save
+    with _open_file_like(f, 'wb') as opened_file:
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\torch\serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\torch\serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'checkpoints/ResNet50-best_1-0.623.pth'

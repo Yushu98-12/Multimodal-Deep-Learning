@@ -1,0 +1,50 @@
+{
+    "os": "Windows-10-10.0.22000-SP0",
+    "python": "3.7.16",
+    "heartbeatAt": "2023-06-28T02:26:10.088720",
+    "startedAt": "2023-06-28T02:26:08.551121",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "G:\\Projects\\\u5c0f\u9ea6\u5e72\u65f1\u7a0b\u5ea6\u68c0\u6d4b\\\u57fa\u4e8e\u6df1\u5ea6\u5b66\u4e60\u7684\u5c0f\u9ea6\u5e72\u65f1\u7a0b\u5ea6\u68c0\u6d4b\\\u6a21\u578b\u8bad\u7ec3\\run.py",
+    "codePath": "\u57fa\u4e8e\u6df1\u5ea6\u5b66\u4e60\u7684\u5c0f\u9ea6\u5e72\u65f1\u7a0b\u5ea6\u68c0\u6d4b\\\u6a21\u578b\u8bad\u7ec3\\run.py",
+    "git": {
+        "remote": null,
+        "commit": null
+    },
+    "email": "584363684@qq.com",
+    "root": "G:/Projects/\u5c0f\u9ea6\u5e72\u65f1\u7a0b\u5ea6\u68c0\u6d4b",
+    "host": "WuYushu",
+    "username": "58436",
+    "executable": "F:\\Anaconda3\\envs\\PyTorch\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3201.0,
+        "min": 0.0,
+        "max": 3201.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3201.0,
+            "min": 0.0,
+            "max": 3201.0
+        }
+    ],
+    "disk": {
+        "total": 199.99999618530273,
+        "used": 52.869903564453125
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.855525970458984
+    }
+}

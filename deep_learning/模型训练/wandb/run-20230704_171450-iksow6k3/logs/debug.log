@@ -1,0 +1,35 @@
+2023-07-04 17:14:50,991 INFO    MainThread:12100 [wandb_setup.py:_flush():76] Configure stats pid to 12100
+2023-07-04 17:14:50,991 INFO    MainThread:12100 [wandb_setup.py:_flush():76] Loading settings from C:\Users\58436\.config\wandb\settings
+2023-07-04 17:14:50,991 INFO    MainThread:12100 [wandb_setup.py:_flush():76] Loading settings from G:\Projects\drought_wheat\深度学习\模型训练\wandb\settings
+2023-07-04 17:14:50,992 INFO    MainThread:12100 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-07-04 17:14:50,992 INFO    MainThread:12100 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-07-04 17:14:50,992 INFO    MainThread:12100 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': '深度学习\\模型训练\\run.py', 'program': 'G:\\Projects\\drought_wheat\\深度学习\\模型训练\\run.py'}
+2023-07-04 17:14:50,993 INFO    MainThread:12100 [wandb_init.py:_log_setup():506] Logging user logs to G:\Projects\drought_wheat\深度学习\模型训练\wandb\run-20230704_171450-iksow6k3\logs\debug.log
+2023-07-04 17:14:50,993 INFO    MainThread:12100 [wandb_init.py:_log_setup():507] Logging internal logs to G:\Projects\drought_wheat\深度学习\模型训练\wandb\run-20230704_171450-iksow6k3\logs\debug-internal.log
+2023-07-04 17:14:50,993 INFO    MainThread:12100 [wandb_init.py:init():546] calling init triggers
+2023-07-04 17:14:50,993 INFO    MainThread:12100 [wandb_init.py:init():553] wandb.init called with sweep_config: {}
+config: {}
+2023-07-04 17:14:50,993 INFO    MainThread:12100 [wandb_init.py:init():602] starting backend
+2023-07-04 17:14:50,993 INFO    MainThread:12100 [wandb_init.py:init():606] setting up manager
+2023-07-04 17:14:50,996 INFO    MainThread:12100 [backend.py:_multiprocessing_setup():108] multiprocessing start_methods=spawn, using: spawn
+2023-07-04 17:14:51,000 INFO    MainThread:12100 [wandb_init.py:init():613] backend started and connected
+2023-07-04 17:14:51,001 INFO    MainThread:12100 [wandb_init.py:init():701] updated telemetry
+2023-07-04 17:14:51,169 INFO    MainThread:12100 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2023-07-04 17:15:00,225 WARNING MainThread:12100 [wandb_init.py:init():1165] interrupted
+Traceback (most recent call last):
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\wandb\sdk\wandb_init.py", line 1144, in init
+    run = wi.init()
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\wandb\sdk\wandb_init.py", line 747, in init
+    cancel=True,
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\wandb\sdk\lib\mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\wandb\sdk\lib\mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\wandb\sdk\lib\mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+  File "F:\Anaconda3\envs\PyTorch\lib\threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "F:\Anaconda3\envs\PyTorch\lib\threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-07-04 17:15:34,145 WARNING MsgRouterThr:12100 [router.py:message_loop():77] message_loop has been closed

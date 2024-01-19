@@ -1,0 +1,136 @@
+
+Epoch 1/30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 188/188 [01:14<00:00,  2.52it/s]
+保存新的最佳模型 ../checkpoints/ResNet50-best_1-0.000.pth
+Epoch 2/30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 188/188 [01:11<00:00,  2.62it/s]
+保存新的最佳模型 ../checkpoints/ResNet50-best_1-0.624.pth
+Epoch 3/30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 188/188 [01:11<00:00,  2.62it/s]
+Traceback (most recent call last):
+  File "G:\Projects\小麦干旱程度检测\基于深度学习的小麦干旱程度检测\模型训练\run.py", line 325, in <module>
+    log_test = evaluate_testset()
+  File "G:\Projects\小麦干旱程度检测\基于深度学习的小麦干旱程度检测\模型训练\run.py", line 252, in evaluate_testset
+    outputs = model(images)  # 输入模型，执行前向预测
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\torch\nn\modules\module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\torchvision\models\resnet.py", line 220, in forward
+    return self._forward_impl(x)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\torchvision\models\resnet.py", line 211, in _forward_impl
+    x = self.layer4(x)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\torch\nn\modules\module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\torch\nn\modules\container.py", line 117, in forward
+    input = module(input)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\torch\nn\modules\module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\torchvision\models\resnet.py", line 113, in forward
+    out = self.bn3(out)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\torch\nn\modules\module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\torch\nn\modules\batchnorm.py", line 136, in forward
+    self.weight, self.bias, bn_training, exponential_average_factor, self.eps)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\torch\nn\functional.py", line 2058, in batch_norm
+    training, momentum, eps, torch.backends.cudnn.enabled
+KeyboardInterrupt

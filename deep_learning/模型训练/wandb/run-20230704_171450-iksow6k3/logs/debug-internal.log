@@ -1,0 +1,75 @@
+2023-07-04 17:14:51,000 INFO    StreamThr :11916 [internal.py:wandb_internal():90] W&B internal server running at pid: 11916, started at: 2023-07-04 17:14:51.000789
+2023-07-04 17:14:51,001 DEBUG   HandlerThread:11916 [handler.py:handle_request():144] handle_request: status
+2023-07-04 17:14:51,002 INFO    WriterThread:11916 [datastore.py:open_for_write():85] open: G:\Projects\drought_wheat\深度学习\模型训练\wandb\run-20230704_171450-iksow6k3\run-iksow6k3.wandb
+2023-07-04 17:14:51,005 DEBUG   SenderThread:11916 [sender.py:send():336] send: header
+2023-07-04 17:14:51,170 DEBUG   SenderThread:11916 [sender.py:send():336] send: run
+2023-07-04 17:14:54,832 INFO    SenderThread:11916 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\urllib3\connection.py", line 369, in connect
+    self.sock = conn = self._connect_tls_proxy(hostname, conn)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\urllib3\connection.py", line 510, in _connect_tls_proxy
+    ssl_context=ssl_context,
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\urllib3\util\ssl_.py", line 453, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\urllib3\util\ssl_.py", line 495, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock)
+  File "F:\Anaconda3\envs\PyTorch\lib\ssl.py", line 423, in wrap_socket
+    session=session
+  File "F:\Anaconda3\envs\PyTorch\lib\ssl.py", line 870, in _create
+    self.do_handshake()
+  File "F:\Anaconda3\envs\PyTorch\lib\ssl.py", line 1139, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1091)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\requests\adapters.py", line 499, in send
+    timeout=timeout,
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ProxyError('Your proxy appears to only use HTTP and not HTTPS, try changing your proxy URL to be HTTP. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#https-proxy-error-http-proxy', SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1091)'))))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\wandb\sdk\internal\internal_api.py", line 243, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\transport\requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\Anaconda3\envs\PyTorch\lib\site-packages\requests\adapters.py", line 559, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ProxyError('Your proxy appears to only use HTTP and not HTTPS, try changing your proxy URL to be HTTP. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#https-proxy-error-http-proxy', SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1091)'))))
+2023-07-04 17:14:56,201 DEBUG   HandlerThread:11916 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-04 17:15:00,230 DEBUG   HandlerThread:11916 [handler.py:handle_request():144] handle_request: shutdown
+2023-07-04 17:15:00,230 INFO    HandlerThread:11916 [handler.py:finish():842] shutting down handler
+2023-07-04 17:15:01,235 INFO    WriterThread:11916 [datastore.py:close():298] close: G:\Projects\drought_wheat\深度学习\模型训练\wandb\run-20230704_171450-iksow6k3\run-iksow6k3.wandb
+2023-07-04 17:15:09,841 INFO    SenderThread:11916 [dir_watcher.py:__init__():219] watching files in: G:\Projects\drought_wheat\深度学习\模型训练\wandb\run-20230704_171450-iksow6k3\files
+2023-07-04 17:15:09,841 INFO    SenderThread:11916 [sender.py:_start_run_threads():1081] run started: iksow6k3 with start time 1688462091.000789
+2023-07-04 17:15:09,841 INFO    SenderThread:11916 [sender.py:finish():1504] shutting down sender
+2023-07-04 17:15:09,841 INFO    SenderThread:11916 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-07-04 17:15:10,855 INFO    SenderThread:11916 [dir_watcher.py:finish():395] scan: G:\Projects\drought_wheat\深度学习\模型训练\wandb\run-20230704_171450-iksow6k3\files
+2023-07-04 17:15:10,856 INFO    SenderThread:11916 [dir_watcher.py:finish():409] scan save: G:\Projects\drought_wheat\深度学习\模型训练\wandb\run-20230704_171450-iksow6k3\files\config.yaml config.yaml
+2023-07-04 17:15:10,856 INFO    SenderThread:11916 [file_pusher.py:finish():164] shutting down file pusher
+2023-07-04 17:15:10,856 INFO    SenderThread:11916 [file_pusher.py:join():169] waiting for file pusher
+2023-07-04 17:15:33,349 INFO    wandb-upload_0:11916 [upload_job.py:push():138] Uploaded file G:\Projects\drought_wheat\深度学习\模型训练\wandb\run-20230704_171450-iksow6k3\files\config.yaml
