@@ -51,7 +51,7 @@ pred_logits = model_trunc(input_img)
 pred_logits['semantic_feature'].squeeze().detach().cpu().numpy().shape
 
 # 载入测试集图像分类结果
-df = pd.read_csv('../算法评估结果图/AlexNet-best_1-0.558/测试集预测结果.csv')
+df = pd.read_csv('../Algorithm evaluation result graph/AlexNet-best_1-0.558/测试集预测结果.csv')
 # 计算测试集每张图像的语义特征
 encoding_array = []
 img_path_list = []

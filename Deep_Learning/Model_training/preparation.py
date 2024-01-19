@@ -2,7 +2,7 @@ import os
 #
 # 创建目录
 # 存放结果文件
-os.mkdir('../图像分类识别/output')
+os.mkdir('../Image_Classification/output')
 
 # 存放训练得到的模型权重
 os.mkdir('../checkpoints')

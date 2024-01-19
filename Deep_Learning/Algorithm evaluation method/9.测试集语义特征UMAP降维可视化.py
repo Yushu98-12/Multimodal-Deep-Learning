@@ -12,7 +12,7 @@ plt.rcParams['axes.unicode_minus']=False  # 用来正常显示负号
 encoding_array = np.load('测试集语义特征.npy', allow_pickle=True)
 encoding_array.shape
 # 载入测试机图像分类结果
-df = pd.read_csv('../算法评估结果图/AlexNet-best_1-0.558/测试集预测结果.csv')
+df = pd.read_csv('../Algorithm evaluation result graph/AlexNet-best_1-0.558/测试集预测结果.csv')
 classes = df['标注类别名称'].unique()
 print(classes)
 
